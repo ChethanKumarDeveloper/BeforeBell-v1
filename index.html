@@ -5,135 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BeforeBell – Get it done before the bell rings</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-
-
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-inner">
-      <div class="logo">
-        <img src="assets\images\logo.png" alt="BeforeBell Logo" />
-      </div>
-
-      <nav class="nav">
-        <a href="#services">Services</a>
-        <a href="#how-it-works">How it works</a>
-        <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
-          Book Service
-        </a>
-      </nav>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="./assets/images/logo.png" alt="BeforeBell Logo">
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <h1>
-        Get it done. <br />
-        <span>Before the bell rings.</span>
-      </h1>
-      <p>
-        Assignments, PPTs, and software projects — upload your requirement and we’ll take it from there.
-      </p>
-      <a class="btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How it works</a>
+      <a class="btn-primary"
+         href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
+         target="_blank">
         Book Service
       </a>
-    </div>
-  </section>
+    </nav>
+  </div>
+</header>
 
-  <!-- SERVICES -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>Our Services</h2>
+<section class="hero">
+  <div class="container">
+    <h1>
+      Get it done.<br>
+      <span>Before the bell rings.</span>
+    </h1>
+    <p>
+      Assignments, PPTs, and software projects — upload your requirement and we’ll take it from there.
+    </p>
+    <a class="btn-primary"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
+       target="_blank">
+      Book Service
+    </a>
+  </div>
+</section>
 
-      <div class="service-grid">
-        <div class="card">
-          <h3>Assignment & Assessment Support</h3>
-          <p>Lab records, reports, written assignments.</p>
-         <p class="price">Starts from ₹499/-</p>
+<section id="services" class="services">
+  <div class="container">
+    <h2>Our Services</h2>
 
-<a class="card-btn"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
-   target="_blank">
-  Book Service
-</a>
-        </div>
+    <div class="service-grid">
+      <div class="card">
+        <h3>Reports & Assessment Support</h3>
+        <p>Reports, assignments.</p>
+        <p class="price">Starts from ₹499/-</p>
+        <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
+          Book Service
+        </a>
+      </div>
 
-        <div class="card">
-          <h3>PPT & Seminar Presentations</h3>
-          <p>Clean slides with structured content.</p>
-          <p class="price">Starts from ₹499/-</p>
+      <div class="card">
+        <h3>PPT & Seminar Presentations</h3>
+        <p>Clean slides with structured content.</p>
+        <p class="price">Starts from ₹499/-</p>
+        <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
+          Book Service
+        </a>
+      </div>
 
-<a class="card-btn"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
-   target="_blank">
-  Book Service
-</a>
-        </div>
+      <div class="card">
+        <h3>Software Project Support</h3>
+        <p>Mini & major projects with documentation.</p>
+        <p class="price">Starts from ₹499/-</p>
+        <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
+          Book Service
+        </a>
+      </div>
 
-        <div class="card">
-          <h3>Software Project Support</h3>
-          <p>Mini & major projects with documentation.</p>
-          <p class="price">Starts from ₹499/-</p>
-
-<a class="card-btn"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
-   target="_blank">
-  Book Service
-</a>
-        </div>
-
-        <div class="card">
-          <h3>Custom Academic Help</h3>
-          <p>Any academic help not listed above.</p>
-          <p class="price">Starts from ₹499/-</p>
-
-<a class="card-btn"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
-   target="_blank">
-  Book Service
-</a>
-        </div>
+      <div class="card">
+        <h3>Custom Academic Help</h3>
+        <p>Any academic help not listed above.</p>
+        <p class="price">Starts from ₹499/-</p>
+        <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
+          Book Service
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- HOW IT WORKS -->
-  <section id="how-it-works" class="how">
-    <div class="container">
-      <h2>How It Works</h2>
+<section id="how-it-works" class="how">
+  <div class="container">
+    <h2>How It Works</h2>
+    <ol>
+      <li><strong>Book the service</strong> by filling the form and uploading your requirement.</li>
+      <li><strong>We review your work</strong> and check feasibility and deadline.</li>
+      <li><strong>Price & timeline confirmed</strong> before starting.</li>
+      <li><strong>Password-protected delivery</strong> is shared.</li>
+      <li><strong>Payment unlocks</strong> the final content.</li>
+      <li><strong>One free correction</strong> if required.</li>
+    </ol>
+  </div>
+</section>
 
-      <ol>
-  <li><strong>Book the service</strong> by filling the form and uploading your requirement.</li>
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 BeforeBell. All rights reserved.</p>
+  </div>
+</footer>
 
-  <li><strong>We review your work</strong> and check feasibility, effort, and deadline.</li>
-
-  <li><strong>We confirm price & timeline</strong> before starting the work.</li>
-
-  <li><strong>You receive the completed work</strong> in a password-protected file.</li>
-
-  <li><strong>After payment</strong>, we share the password and unlock the content.</li>
-
-  <li><strong>One free correction</strong> is provided if required.</li>
-</ol>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 BeforeBell. All rights reserved.</p>
-    </div>
-  </footer>
+<script>
+  const toggleBtn = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+  toggleBtn.addEventListener("click", () => navMenu.classList.toggle("active"));
+</script>
 
 </body>
 </html>
