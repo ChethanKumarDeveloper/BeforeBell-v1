@@ -131,6 +131,35 @@ body {
   transition: 0.2s ease;
 }
 
+.card-btn {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bg);
+  color: var(--white);
+
+  padding: 14px 20px;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  min-height: 48px;
+}
+
+.card-btn:hover {
+  opacity: 0.95;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--orange);
+  opacity: 0.9;
+}
+
 
 .card h3 {
   font-size: 20px;
@@ -170,6 +199,11 @@ body {
   margin-bottom: 16px;
   color: var(--muted);
 }
+
+.how li strong {
+  color: var(--blue);
+}
+
 
 /* ---------- FOOTER ---------- */
 .footer {
