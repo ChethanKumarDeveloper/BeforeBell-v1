@@ -141,6 +141,7 @@ body {
   gap: 24px;
 }
 
+/* ---------- CARD ---------- */
 .card {
   background: var(--white);
   border-radius: 16px;
@@ -173,10 +174,8 @@ body {
   margin-bottom: 20px;
 }
 
-/* ---------- CARD BUTTON ---------- */
+/* ---------- CARD BUTTONS ---------- */
 .card-btn {
-  margin-top: auto;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,10 +191,35 @@ body {
   text-decoration: none;
 
   min-height: 48px;
+  margin-bottom: 12px;
 }
 
 .card-btn:hover {
   opacity: 0.95;
+}
+
+/* ---------- CHAT BUTTON ---------- */
+.card-chat-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  color: var(--blue);
+
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  border: 2px solid var(--blue);
+  cursor: pointer;
+}
+
+.card-chat-btn:hover {
+  background: var(--blue);
+  color: var(--white);
 }
 
 /* ---------- HOW IT WORKS ---------- */

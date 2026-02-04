@@ -32,11 +32,11 @@
          target="_blank">
         Book Service
       </a>
-      <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <h1>
@@ -51,15 +51,16 @@
        target="_blank">
       Book Service
     </a>
-    <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services" class="services">
   <div class="container">
     <h2>Our Services</h2>
 
     <div class="service-grid">
+
       <div class="card">
         <h3>Reports</h3>
         <p>Professionally structured academic reports with clear content and format.</p>
@@ -99,10 +100,12 @@
         </a>
         <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
 <section id="how-it-works" class="how">
   <div class="container">
     <h2>How It Works</h2>
@@ -117,21 +120,31 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <p>© 2025 BeforeBell. All rights reserved.</p>
   </div>
 </footer>
 
+<!-- MOBILE MENU SCRIPT -->
 <script>
   const toggleBtn = document.getElementById("menuToggle");
   const navMenu = document.getElementById("navMenu");
   toggleBtn.addEventListener("click", () => navMenu.classList.toggle("active"));
 </script>
 
+<!-- CHAT OPEN FUNCTION -->
+<script>
+  function openChat() {
+    if (window.Tawk_API) {
+      Tawk_API.maximize();
+    }
+  }
+</script>
 
-  <!-- Start of Tawk.to Script -->
-  <script type="text/javascript">
+<!-- Tawk.to Script -->
+<script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -141,9 +154,7 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
   })();
-  </script>
-  <!-- End of Tawk.to Script -->
+</script>
 
 </body>
 </html>
-
