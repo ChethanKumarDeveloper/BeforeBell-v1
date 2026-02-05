@@ -185,3 +185,9 @@ body {
     display: flex;
   }
 }
+
+.form-embed {
+  margin-top: 32px;
+  border-radius: 12px;
+  overflow: hidden;
+}
