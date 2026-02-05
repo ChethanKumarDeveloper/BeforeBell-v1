@@ -120,11 +120,25 @@
     <div class="contact-box">
       <button class="btn-primary" onclick="openChat()">Chat with Us</button>
 
-      <form onsubmit="showConfirmation(event)">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit" class="card-btn">Submit</button>
-      </form>
+      <script>
+  function showConfirmation(e) {
+    e.preventDefault();
+
+    // get the form element
+    const form = e.target;
+
+    // show confirmation
+    alert("Thanks! We’ll reply within 1 hour. Please check your inbox or spam folder.");
+
+    // clear inputs
+    form.reset();
+  }
+
+  function openChat() {
+    if (window.Tawk_API) Tawk_API.maximize();
+  }
+</script>
+
     </div>
   </div>
 </section>
