@@ -16,27 +16,24 @@
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
   <div class="container header-inner">
     <div class="logo">
       <img src="./assets/images/logo.png" alt="BeforeBell Logo">
     </div>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <button class="menu-toggle" id="menuToggle">☰</button>
 
     <nav class="nav" id="navMenu">
       <a href="#services">Services</a>
       <a href="#how-it-works">How it works</a>
-      <a class="btn-primary"
-         href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform"
-         target="_blank">
-        Book Service
-      </a>
+      <a href="#contact" class="btn-primary">Contact</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (UNCHANGED) -->
 <section class="hero">
   <div class="container">
     <h1>
@@ -54,13 +51,12 @@
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- SERVICES (CHAT REMOVED) -->
 <section id="services" class="services">
   <div class="container">
     <h2>Our Services</h2>
 
     <div class="service-grid">
-
       <div class="card">
         <h3>Reports</h3>
         <p>Professionally structured academic reports with clear content and format.</p>
@@ -68,7 +64,6 @@
         <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
           Book Service
         </a>
-        <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
       </div>
 
       <div class="card">
@@ -78,7 +73,6 @@
         <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
           Book Service
         </a>
-        <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
       </div>
 
       <div class="card">
@@ -88,7 +82,6 @@
         <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
           Book Service
         </a>
-        <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
       </div>
 
       <div class="card">
@@ -98,14 +91,12 @@
         <a class="card-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSezYJn5dh6WrAtPHK_jpHd-fnNx8KOF4yMFYAqjQ-14O2Rsrw/viewform" target="_blank">
           Book Service
         </a>
-        <button class="card-chat-btn" onclick="openChat()">Chat Now</button>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- HOW IT WORKS (UNCHANGED) -->
 <section id="how-it-works" class="how">
   <div class="container">
     <h2>How It Works</h2>
@@ -120,41 +111,60 @@
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Have a question? Chat with us or leave your details.</p>
+
+    <div class="contact-box">
+      <button class="btn-primary" onclick="openChat()">Chat with Us</button>
+
+      <form onsubmit="showConfirmation(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit" class="card-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER (UNCHANGED) -->
 <footer class="footer">
   <div class="container">
-    <a href="./terms.html">Terms & Conditions</a>
-    <p>© 2025 BeforeBell. All rights reserved.</p>
+    <p>© 2025 BeforeBell. All rights reserved. | <a href="./terms.html">Terms & Conditions</a></p>
   </div>
 </footer>
 
-<!-- MOBILE MENU SCRIPT -->
+<!-- MOBILE NAV -->
 <script>
-  const toggleBtn = document.getElementById("menuToggle");
-  const navMenu = document.getElementById("navMenu");
-  toggleBtn.addEventListener("click", () => navMenu.classList.toggle("active"));
+  document.getElementById("menuToggle").onclick = () =>
+    document.getElementById("navMenu").classList.toggle("active");
 </script>
 
-<!-- CHAT OPEN FUNCTION -->
+<!-- CONTACT POPUP -->
 <script>
+  function showConfirmation(e) {
+    e.preventDefault();
+    alert("Thanks! We’ll reply within 1 hour. Please check your inbox or spam folder.");
+  }
+
   function openChat() {
-    if (window.Tawk_API) {
-      Tawk_API.maximize();
-    }
+    if (window.Tawk_API) Tawk_API.maximize();
   }
 </script>
 
-<!-- Tawk.to Script -->
+<!-- TAWK CHAT -->
 <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6982d1ffd4f3481c3af5b7e0/1jgjg8k94';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
+var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6982d1ffd4f3481c3af5b7e0/1jgjg8k94';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 
 </body>

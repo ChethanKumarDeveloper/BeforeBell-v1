@@ -6,16 +6,11 @@
   --muted: #6b7280;
 }
 
-/* ---------- RESET ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -24,36 +19,13 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- LAYOUT ---------- */
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 20px;
 }
 
-/* ---------- BUTTONS ---------- */
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--orange);
-  color: var(--white);
-
-  padding: 14px 28px;
-  border-radius: 10px;
-
-  font-weight: 600;
-  text-decoration: none;
-
-  box-shadow: 0 8px 20px rgba(242, 153, 74, 0.3);
-}
-
-.btn-primary:hover {
-  opacity: 0.95;
-}
-
-/* ---------- HEADER ---------- */
+/* HEADER */
 .header {
   background: var(--white);
   border-bottom: 1px solid #e5e7eb;
@@ -63,53 +35,39 @@ body {
 }
 
 .header-inner {
-  position: relative;
   height: 72px;
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo img {
   height: 40px;
 }
 
-/* ---------- NAV (DESKTOP) ---------- */
 .nav {
   display: flex;
-  align-items: center;
   gap: 24px;
 }
 
 .nav a {
   text-decoration: none;
-  font-weight: 500;
   color: var(--blue);
+  font-weight: 500;
 }
 
-/* ---------- MOBILE MENU BUTTON ---------- */
 .menu-toggle {
   display: none;
   font-size: 26px;
   background: none;
   border: none;
-  color: var(--blue);
-  cursor: pointer;
 }
 
-/* ---------- HERO ---------- */
+/* HERO */
 .hero {
   background: var(--white);
   padding: 96px 0;
   text-align: center;
-}
-
-.hero h1 {
-  font-size: clamp(32px, 5vw, 48px);
-  font-weight: 700;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .hero h1 span {
@@ -117,190 +75,113 @@ body {
 }
 
 .hero p {
+  color: var(--muted);
   margin: 24px auto 40px;
   max-width: 600px;
-  font-size: 18px;
-  color: var(--muted);
 }
 
-/* ---------- SERVICES ---------- */
+/* BUTTONS */
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* SERVICES */
 .services {
   padding: 96px 0;
 }
 
-.services h2,
-.how h2 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 56px;
-}
-
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* ---------- CARD ---------- */
 .card {
   background: var(--white);
   border-radius: 16px;
   padding: 32px;
-
-  box-shadow: 0 12px 32px rgba(36, 63, 115, 0.1);
-
+  box-shadow: 0 12px 32px rgba(36,63,115,0.1);
   display: flex;
   flex-direction: column;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  transition: 0.2s ease;
-}
-
-.card h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.card p {
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
 .price {
-  font-weight: 600;
   color: var(--orange);
-  margin-bottom: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
 }
 
-/* ---------- CARD BUTTONS ---------- */
 .card-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background: var(--orange);
   color: var(--white);
-
-  padding: 14px 20px;
+  padding: 14px;
   border-radius: 10px;
-
-  font-size: 16px;
-  font-weight: 600;
+  text-align: center;
   text-decoration: none;
-
-  min-height: 48px;
-  margin-bottom: 12px;
-}
-
-.card-btn:hover {
-  opacity: 0.95;
-}
-
-/* ---------- CHAT BUTTON ---------- */
-.card-chat-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: transparent;
-  color: var(--blue);
-
-  padding: 12px 20px;
-  border-radius: 10px;
-
-  font-size: 15px;
   font-weight: 600;
-
-  border: 2px solid var(--blue);
-  cursor: pointer;
 }
 
-.card-chat-btn:hover {
-  background: var(--blue);
-  color: var(--white);
-}
-
-/* ---------- HOW IT WORKS ---------- */
+/* HOW */
 .how {
   background: var(--white);
   padding: 96px 0;
 }
 
-.how ol {
-  max-width: 640px;
-  margin: 0 auto;
-  padding-left: 20px;
+/* CONTACT */
+.contact {
+  padding: 96px 0;
 }
 
-.how li {
-  margin-bottom: 16px;
-  color: var(--muted);
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
 }
 
-.how li strong {
-  color: var(--blue);
+.contact-box form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-/* ---------- FOOTER ---------- */
+.contact-box input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* FOOTER */
 .footer {
   text-align: center;
-  padding: 32px 0;
-  font-size: 14px;
+  padding: 32px;
   color: var(--muted);
 }
 
-/* ---------- MOBILE ---------- */
+/* MOBILE */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
 
   .nav {
+    display: none;
     position: absolute;
     top: 72px;
     left: 0;
     width: 100%;
-
     background: var(--white);
-    border-bottom: 1px solid #e5e7eb;
-
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-
-    padding: 24px 0;
-    display: none;
+    padding: 20px;
   }
 
   .nav.active {
     display: flex;
-  }
-
-  .hero {
-    padding: 64px 0;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .services,
-  .how {
-    padding: 64px 0;
-  }
-
-  .services h2,
-  .how h2 {
-    font-size: 26px;
-  }
-
-  .card {
-    padding: 24px;
   }
 }
